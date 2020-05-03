@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/feather-icons"></script>
+<link rel="stylesheet" type="text/css" href="header.css">
+</head>
+
+<body>
+<nav class='navbar'>
+    <div class='brand-title'>SHOWKASE<span>.</span></div>
+    <a href='#' class='toggle-button'>
+        <span class='bar'></span>
+        <span class='bar'></span>
+        <span class='bar'></span>
+    </a>
+    <div class='navbar-links'>
+    <ul>
+        <li><a href='#'>HOME</a></li>
+        <li><a href='#'>PAGES</a></li>
+        <li><a href='#'>PORTLOFIO</a></li>
+        <li><a href='#'>BLOGS</a></li>
+        <li><a href='#'>ABOUT</a></li>
+    </ul>
+    </div>  
+</nav>
+
+<script>
+    feather.replace();
+    const toggleButton = document.getElementsByClassName('toggle-button')[0];
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+    toggleButton.addEventListener('click', () =>{
+        navbarLinks.classList.toggle('active');
+    })
+  </script>
+</body>
+</html>
