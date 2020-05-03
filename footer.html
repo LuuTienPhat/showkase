@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" type="text/css" href="footer.css">
+</head>
+
+<body>
+    <div class='footer'>
+        <div class='footer-container' id='footer-container'>
+            <div class='footer-item show'>
+                <div class='footer-brand'>
+                    <div class='footer-brand-logo'>SHOWKASE<span>.</span></div>
+                    <div class='footer-brand-description'>Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s.</div>
+                </div>
+            </div>
+            <div class='footer-item' id='footer-item'>
+                <div data-id='0' class='footer-title'>Menu
+                    <i data-id='0' id='expand' data-feather="plus"></i>
+                </div>
+                <ul class='footer-menu-link'>
+                    <li><a href="https://www.google.com">HOME</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </div>
+            <div class='footer-item' id='footer-item'>
+                <div data-id='1' class='footer-title'>Popular Posts
+                    <i data-id='1' id='expand' data-feather="plus"></i>
+                </div>
+                <div class='footer-popular-post'>
+                    <div class='footer-popular-post-item'>
+                        <img src='images/02.jpg' />
+                        <div class='footer-popular-post-item-information'>
+                            <div>Ipsum is simply dummy text.</div>
+                            <div class='footer-popular-post-item-information-date'>
+                                <i data-feather="calendar"></i>
+                                <div>Apr 15, 2019</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='footer-popular-post-item'>
+                        <img src='images/02.jpg' />
+                        <div class='footer-popular-post-item-information'>
+                            <div>Ipsum is simply dummy text.</div>
+                            <div class='footer-popular-post-item-information-date'>
+                                <i data-feather="calendar"></i>
+                                <div>Apr 15, 2019</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='footer-item' id='footer-item'>
+                <div data-id='2' class='footer-title'>Contact
+                    <i data-id='2' id='expand' data-feather="plus"></i>
+                </div>
+                <div class='footer-contact-item'>
+                    <i id='expand' data-feather="phone"></i>
+                    <div>Phone<br>
+                        +0123 456 789</div>
+                </div>
+                <div class='footer-contact-item'>
+                    <i data-feather="mail"></i>
+                    <div>Mail<br>
+                        mail@showkase.com
+                    </div>
+                </div>
+                <div class='footer-contact-item'>
+                    <i data-feather="map-pin"></i>
+                    <div>Address<br>
+                        1234 North Luke Lane, South Bend,<br>
+                        IN 360001
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='credit-social'>
+            <div class='credit'>Copyright 2020 Showkase All Rights Reserved</div>
+            <div class='social'>
+                <i data-feather="facebook"></i>
+                <i data-feather="twitter"></i>
+                <i data-feather="instagram"></i>
+                <i data-feather="youtube"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        feather.replace();
+        var footerContainer = document.getElementById('footer-container');
+        var footerItem = document.querySelectorAll('#footer-item');
+
+        footerContainer.addEventListener('click', function (event) {
+            var button = event.target;
+            var i = parseInt(button.dataset.id);
+            footerItem[i].classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
