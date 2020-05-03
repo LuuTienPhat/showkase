@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box img{
+    width: 300px;
+}
+
+.box-content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 0 0 3rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.box-title,.box-name,.box-information,.box-button{
+    margin: 25px 0 0 0;
+}
+
+.box-content .box-title{
+    font-weight: 400;
+    
+}
+.box-content h1{
+    font-weight: 500;
+    font-size: 30px;
+    
+}
+
+.box-content p{
+    font-weight: 300;
+    font-size: 16px;
+    
+}
+
+.box-content button{
+    border:1px solid  #FD0054;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+    
+}
+
+.box.box-reflect img {
+    order: 1;
+}
+
+.box.box-reflect .box-content{
+    align-items: flex-end;
+    margin: 0 3rem 0 0;
+    text-align: right;
+}
+
+
+@media (max-width: 768px){
+    .box{
+        flex-direction: column;
+    }
+
+    .box img{
+        width:100%;
+    }
+
+    .box-content{
+        margin: 0;
+    }
+
+    .box.box-reflect img{
+        order:0;
+    }
+
+    .box.box-reflect .box-content{
+        margin: 0;
+    }
+}
