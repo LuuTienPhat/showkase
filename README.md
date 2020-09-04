@@ -1,3 +1,3 @@
 ## https://luutienphat.github.io/showkase
 
-This webite is created by LuuTienPhat 
+![Alt Text](https://media.giphy.com/media/JU51JkE1Fd0rWLozsR/giphy.gif)
